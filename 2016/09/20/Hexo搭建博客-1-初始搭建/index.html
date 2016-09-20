@@ -12,7 +12,7 @@
 <meta property="og:site_name" content="Alan's">
 <meta property="og:description" content="一直想搭个博客，在网上找了各种资料，原来搭博客有这么多方法。一番比较之后，我选择用Hexo搭建。于是又是各种找资料查怎么搭建。运行成功之后，发现要用markdown写文章，要写一遍博客练练手，于是就决定把用hexo搭博客的步骤写成第一篇博文，顺便熟悉一下markdown的语法。">
 <meta property="og:image" content="http://yoursite.com/css/images/hexo/banner.png">
-<meta property="og:updated_time" content="2016-09-20T09:20:17.375Z">
+<meta property="og:updated_time" content="2016-09-20T10:39:45.385Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo搭建博客 (1) 初始搭建">
 <meta name="twitter:description" content="一直想搭个博客，在网上找了各种资料，原来搭博客有这么多方法。一番比较之后，我选择用Hexo搭建。于是又是各种找资料查怎么搭建。运行成功之后，发现要用markdown写文章，要写一遍博客练练手，于是就决定把用hexo搭博客的步骤写成第一篇博文，顺便熟悉一下markdown的语法。">
@@ -262,11 +262,27 @@
             
             <p>一直想搭个博客，在网上找了各种资料，原来搭博客有这么多方法。一番比较之后，我选择用Hexo搭建。于是又是各种找资料查怎么搭建。运行成功之后，发现要用markdown写文章，要写一遍博客练练手，于是就决定把用hexo搭博客的步骤写成第一篇博文，顺便熟悉一下markdown的语法。</p>
 <a id="more"></a>
-<h3 id="1-下载安装node-js和git"><a href="#1-下载安装node-js和git" class="headerlink" title="1. 下载安装node.js和git"></a>1. 下载安装node.js和git</h3><p>这里就不多介绍了，网上教程都是。</p>
-<h3 id="2-安装Hexo"><a href="#2-安装Hexo" class="headerlink" title="2. 安装Hexo"></a>2. 安装Hexo</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo</div></pre></td></tr></table></figure>
+<h2 id="1-下载安装node-js和git"><a href="#1-下载安装node-js和git" class="headerlink" title="1 下载安装node.js和git"></a>1 下载安装node.js和git</h2><p>这里就不多介绍了，网上教程都是。<br><br></p>
+<h2 id="2-安装Hexo"><a href="#2-安装Hexo" class="headerlink" title="2 安装Hexo"></a>2 安装Hexo</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo</div></pre></td></tr></table></figure>
 <p><img src="/css/images/hexo/hexo1.png" alt="安装Hexo"></p>
-<h3 id="3-初始化"><a href="#3-初始化" class="headerlink" title="3. 初始化"></a>3. 初始化</h3><p>创建hexo文件夹，用于存放项目文件。需要等待一段时间，不要慌张。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init</div></pre></td></tr></table></figure></p>
+<p><br></p>
+<h2 id="3-初始化"><a href="#3-初始化" class="headerlink" title="3 初始化"></a>3 初始化</h2><p>创建hexo文件夹，用于存放项目文件。需要等待一段时间，不要慌张。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init</div></pre></td></tr></table></figure></p>
 <p><img src="/css/images/hexo/hexo2.png" alt="安装Hexo"></p>
+<p><br></p>
+<h2 id="4-本地启动"><a href="#4-本地启动" class="headerlink" title="4 本地启动"></a>4 本地启动</h2><p>好了，到此可以在本地运行了。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">hexo generate (hexo g) <span class="comment">#生成静态文件，</span></div><div class="line"><span class="comment">#会在当前目录下生成一个新的叫做public的文件夹</span></div><div class="line">hexo server (hexo s) <span class="comment">#启动本地web服务，用于博客的预览</span></div><div class="line">hexo d -g <span class="comment">#生成部署</span></div></pre></td></tr></table></figure></p>
+<p><img src="/css/images/hexo/hexo3.jpg" alt="安装Hexo"></p>
+<p><br></p>
+<h2 id="5-github部署"><a href="#5-github部署" class="headerlink" title="5 github部署"></a>5 github部署</h2><h4 id="5-1-创建仓库"><a href="#5-1-创建仓库" class="headerlink" title="5.1 创建仓库"></a>5.1 创建仓库</h4><p><img src="/css/images/hexo/hexo4.png" alt="安装Hexo"><br><img src="/css/images/hexo/hexo5.png" alt="安装Hexo"></p>
+<h4 id="5-2-生成SSH密钥"><a href="#5-2-生成SSH密钥" class="headerlink" title="5.2 生成SSH密钥"></a>5.2 生成SSH密钥</h4><p>ssh-keygen -t rsa -C “你的邮箱地址”，按3个回车，密码为空。<br>在C:\Users\用户名.ssh下，得到两个文件id_rsa和id_rsa.pub。</p>
+<h4 id="5-3-在GitHub上添加SSH密钥"><a href="#5-3-在GitHub上添加SSH密钥" class="headerlink" title="5.3 在GitHub上添加SSH密钥"></a>5.3 在GitHub上添加SSH密钥</h4><p>打开id_rsa.pub，复制全文。<a href="https://github.com/settings/ssh" target="_blank" rel="external">https://github.com/settings/ssh</a> ，Add SSH key，粘贴进去。</p>
+<h4 id="5-4-修改-config-xml文件"><a href="#5-4-修改-config-xml文件" class="headerlink" title="5.4 修改_config.xml文件:"></a>5.4 修改_config.xml文件:</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: git@github.com:yourname/yourname.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
+<p><img src="/css/images/hexo/hexo6.png" alt="安装Hexo"></p>
+<h4 id="5-5-安装一个扩展"><a href="#5-5-安装一个扩展" class="headerlink" title="5.5 安装一个扩展"></a>5.5 安装一个扩展</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
+<h4 id="5-6-输入如下命令，完成部署。"><a href="#5-6-输入如下命令，完成部署。" class="headerlink" title="5.6 输入如下命令，完成部署。"></a>5.6 输入如下命令，完成部署。</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo deploy (hexo d) 部署到远端</div></pre></td></tr></table></figure>
+<p><br></p>
+<h2 id="6-问题"><a href="#6-问题" class="headerlink" title="6 问题"></a>6 问题</h2><p>当我用hexo d命令，我发现文件传不上去。<br>解决方案：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">clone</span> https://github.com/yourname/yourname.github.io.git  yourpath</div></pre></td></tr></table></figure></p>
+<p>将github上的仓库克隆到本地。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">hexo generate</div><div class="line">cp -R public/* yourpath</div><div class="line"><span class="built_in">cd</span> yourpath</div><div class="line">git add .</div><div class="line">git commit -m <span class="string">"xxx"</span></div><div class="line">git push origin master</div></pre></td></tr></table></figure></p>
+<p>原理就是通过git上传，异曲同工。</p>
 
         
         </div>
