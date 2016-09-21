@@ -336,6 +336,10 @@ code {
 #header {
   background: #fff;
   position: relative;
+/*position: fixed
+    top: 0px
+    left: 0px
+    right: 0px*/
 }
 #header a,
 #header a:visited {
