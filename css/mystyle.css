@@ -1,0 +1,20 @@
+.article_heaad_1
+{
+  padding: 10px 10px;
+  background-color: rgba(34,170,221,1);
+  border-radius: 0.2em 0.2em;
+  color:#fff;
+}
+
+.article_heaad_2
+{
+  padding: 5px 10px;
+  background-color: rgba(34,170,221,0.7);
+  border-radius: 0.2em 0.2em;
+  color:#fff;
+}
+
+.text_highlight
+{
+  background-color: #FBFD19; 
+}
