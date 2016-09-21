@@ -12,7 +12,7 @@
 <meta property="og:site_name" content="Alan's">
 <meta property="og:description" content="一直想搭个博客，在网上找了各种资料，原来搭博客有这么多方法。一番比较之后，我选择用Hexo搭建。于是又是各种找资料查怎么搭建。运行成功之后，发现要用markdown写文章，要写一遍博客练练手，于是就决定把用hexo搭博客的步骤写成第一篇博文，顺便熟悉一下markdown的语法。">
 <meta property="og:image" content="http://odt8g6f7a.bkt.clouddn.com/thumbnail.png">
-<meta property="og:updated_time" content="2016-09-21T02:20:55.093Z">
+<meta property="og:updated_time" content="2016-09-21T09:00:18.109Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo搭建博客 (1) 初始搭建">
 <meta name="twitter:description" content="一直想搭个博客，在网上找了各种资料，原来搭博客有这么多方法。一番比较之后，我选择用Hexo搭建。于是又是各种找资料查怎么搭建。运行成功之后，发现要用markdown写文章，要写一遍博客练练手，于是就决定把用hexo搭博客的步骤写成第一篇博文，顺便熟悉一下markdown的语法。">
@@ -71,7 +71,7 @@
                 <nav id="sub-nav">
                     <div class="profile" id="profile-nav">
                         <a id="profile-anchor" href="javascript:;">
-                            <img class="avatar" src="http://odt8g6f7a.bkt.clouddn.coms/head.JPG" />
+                            <img class="avatar" src="http://odt8g6f7a.bkt.clouddn.com/head.png" />
                             <i class="fa fa-caret-down"></i>
                         </a>
                     </div>
@@ -149,7 +149,7 @@
 <aside id="profile">
     <div class="inner profile-inner">
         <div class="base-info profile-block">
-            <img id="avatar" src="http://odt8g6f7a.bkt.clouddn.coms/head.JPG" />
+            <img id="avatar" src="http://odt8g6f7a.bkt.clouddn.com/head.png" />
             <h2 id="name">Alan Liu</h2>
             <h3 id="title">懒懒的攻城狮</h3>
             <span id="location"><i class="fa fa-map-marker"></i>Hangzhou, China</span>
@@ -157,7 +157,7 @@
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                1
+                2
                 <span>文章</span>
             </div>
             <div class="article-info-block">
@@ -262,25 +262,27 @@
             
             <p>一直想搭个博客，在网上找了各种资料，原来搭博客有这么多方法。一番比较之后，我选择用Hexo搭建。于是又是各种找资料查怎么搭建。运行成功之后，发现要用markdown写文章，要写一遍博客练练手，于是就决定把用hexo搭博客的步骤写成第一篇博文，顺便熟悉一下markdown的语法。</p>
 <a id="more"></a>
-<h2 id="1-下载安装node-js和git"><a href="#1-下载安装node-js和git" class="headerlink" title="1 下载安装node.js和git"></a>1 下载安装node.js和git</h2><p>这里就不多介绍了，网上教程都是。<br><br></p>
-<h2 id="2-安装Hexo"><a href="#2-安装Hexo" class="headerlink" title="2 安装Hexo"></a>2 安装Hexo</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo</div></pre></td></tr></table></figure>
+<link rel="stylesheet" type="text/css" href="/css/mystyle.css">
+
+<h2 id="1-下载安装node-js和git"><a href="#1-下载安装node-js和git" class="headerlink" title="1 下载安装node.js和git"></a><div class="article_heaad_1">1 下载安装node.js和git</div></h2><p>这里就不多介绍了，网上教程都是。<br><br></p>
+<h2 id="2-安装Hexo"><a href="#2-安装Hexo" class="headerlink" title="2 安装Hexo"></a><div class="article_heaad_1">2 安装Hexo</div></h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo</div></pre></td></tr></table></figure>
 <p><img src="http://odt8g6f7a.bkt.clouddn.com/hexo1.png" alt="安装Hexo"></p>
 <p><br></p>
-<h2 id="3-初始化"><a href="#3-初始化" class="headerlink" title="3 初始化"></a>3 初始化</h2><p>创建hexo文件夹，用于存放项目文件。需要等待一段时间，不要慌张。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init</div></pre></td></tr></table></figure></p>
+<h2 id="3-初始化"><a href="#3-初始化" class="headerlink" title="3 初始化"></a><div class="article_heaad_1">3 初始化</div></h2><p>创建hexo文件夹，用于存放项目文件。需要等待一段时间，不要慌张。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init</div></pre></td></tr></table></figure></p>
 <p><img src="http://odt8g6f7a.bkt.clouddn.com/hexo2.png" alt="安装Hexo"></p>
 <p><br></p>
-<h2 id="4-本地启动"><a href="#4-本地启动" class="headerlink" title="4 本地启动"></a>4 本地启动</h2><p>好了，到此可以在本地运行了。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">hexo generate (hexo g) <span class="comment">#生成静态文件，</span></div><div class="line"><span class="comment">#会在当前目录下生成一个新的叫做public的文件夹</span></div><div class="line">hexo server (hexo s) <span class="comment">#启动本地web服务，用于博客的预览</span></div><div class="line">hexo d -g <span class="comment">#生成部署</span></div></pre></td></tr></table></figure></p>
+<h2 id="4-本地启动"><a href="#4-本地启动" class="headerlink" title="4 本地启动"></a><div class="article_heaad_1">4 本地启动</div></h2><p>好了，到此可以在本地运行了。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">hexo generate (hexo g) <span class="comment">#生成静态文件，</span></div><div class="line"><span class="comment">#会在当前目录下生成一个新的叫做public的文件夹</span></div><div class="line">hexo server (hexo s) <span class="comment">#启动本地web服务，用于博客的预览</span></div><div class="line">hexo d -g <span class="comment">#生成部署</span></div></pre></td></tr></table></figure></p>
 <p><img src="http://odt8g6f7a.bkt.clouddn.com/hexo3.jpg" alt="安装Hexo"></p>
 <p><br></p>
-<h2 id="5-github部署"><a href="#5-github部署" class="headerlink" title="5 github部署"></a>5 github部署</h2><h4 id="5-1-创建仓库"><a href="#5-1-创建仓库" class="headerlink" title="5.1 创建仓库"></a>5.1 创建仓库</h4><p><img src="http://odt8g6f7a.bkt.clouddn.com/hexo4.png" alt="安装Hexo"><br><img src="http://odt8g6f7a.bkt.clouddn.com/hexo5.png" alt="安装Hexo"></p>
-<h4 id="5-2-生成SSH密钥"><a href="#5-2-生成SSH密钥" class="headerlink" title="5.2 生成SSH密钥"></a>5.2 生成SSH密钥</h4><p>ssh-keygen -t rsa -C “你的邮箱地址”，按3个回车，密码为空。<br>在C:\Users\用户名.ssh下，得到两个文件id_rsa和id_rsa.pub。</p>
-<h4 id="5-3-在GitHub上添加SSH密钥"><a href="#5-3-在GitHub上添加SSH密钥" class="headerlink" title="5.3 在GitHub上添加SSH密钥"></a>5.3 在GitHub上添加SSH密钥</h4><p>打开id_rsa.pub，复制全文。<a href="https://github.com/settings/ssh" target="_blank" rel="external">https://github.com/settings/ssh</a> ，Add SSH key，粘贴进去。</p>
-<h4 id="5-4-修改-config-xml文件"><a href="#5-4-修改-config-xml文件" class="headerlink" title="5.4 修改_config.xml文件:"></a>5.4 修改_config.xml文件:</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: git@github.com:yourname/yourname.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
+<h2 id="5-github部署"><a href="#5-github部署" class="headerlink" title="5 github部署"></a><div class="article_heaad_1">5 github部署</div></h2><h4 id="5-1-创建仓库"><a href="#5-1-创建仓库" class="headerlink" title="5.1 创建仓库"></a><div class="article_heaad_2">5.1 创建仓库</div></h4><p><img src="http://odt8g6f7a.bkt.clouddn.com/hexo4.png" alt="安装Hexo"><br><img src="http://odt8g6f7a.bkt.clouddn.com/hexo5.png" alt="安装Hexo"></p>
+<h4 id="5-2-生成SSH密钥"><a href="#5-2-生成SSH密钥" class="headerlink" title="5.2 生成SSH密钥"></a><div class="article_heaad_2">5.2 生成SSH密钥</div></h4><p>ssh-keygen -t rsa -C “你的邮箱地址”，按3个回车，密码为空。<br>在C:\Users\用户名.ssh下，得到两个文件id_rsa和id_rsa.pub。</p>
+<h4 id="5-3-在GitHub上添加SSH密钥"><a href="#5-3-在GitHub上添加SSH密钥" class="headerlink" title="5.3 在GitHub上添加SSH密钥"></a><div class="article_heaad_2">5.3 在GitHub上添加SSH密钥</div></h4><p>打开id_rsa.pub，复制全文。<a href="https://github.com/settings/ssh" target="_blank" rel="external">https://github.com/settings/ssh</a> ，Add SSH key，粘贴进去。</p>
+<h4 id="5-4-修改-config-xml文件"><a href="#5-4-修改-config-xml文件" class="headerlink" title="5.4 修改_config.xml文件"></a><div class="article_heaad_2">5.4 修改_config.xml文件</div></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: git@github.com:yourname/yourname.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
 <p><img src="http://odt8g6f7a.bkt.clouddn.com/hexo6.png" alt="安装Hexo"></p>
-<h4 id="5-5-安装一个扩展"><a href="#5-5-安装一个扩展" class="headerlink" title="5.5 安装一个扩展"></a>5.5 安装一个扩展</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
-<h4 id="5-6-输入如下命令，完成部署。"><a href="#5-6-输入如下命令，完成部署。" class="headerlink" title="5.6 输入如下命令，完成部署。"></a>5.6 输入如下命令，完成部署。</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo deploy (hexo d) 部署到远端</div></pre></td></tr></table></figure>
+<h4 id="5-5-安装一个扩展"><a href="#5-5-安装一个扩展" class="headerlink" title="5.5 安装一个扩展"></a><div class="article_heaad_2">5.5 安装一个扩展</div></h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
+<h4 id="5-6-输入如下命令，完成部署。"><a href="#5-6-输入如下命令，完成部署。" class="headerlink" title="5.6 输入如下命令，完成部署。"></a><div class="article_heaad_2">5.6 输入如下命令，完成部署。</div></h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo deploy (hexo d) 部署到远端</div></pre></td></tr></table></figure>
 <p><br></p>
-<h2 id="6-问题"><a href="#6-问题" class="headerlink" title="6 问题"></a>6 问题</h2><p>当我用hexo d命令，我发现文件传不上去。<br>解决方案：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">clone</span> https://github.com/yourname/yourname.github.io.git  yourpath</div></pre></td></tr></table></figure></p>
+<h2 id="6-问题"><a href="#6-问题" class="headerlink" title="6 问题"></a><div class="article_heaad_1">6 问题</div></h2><p>当我用hexo d命令，我发现文件传不上去。<br>解决方案：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">clone</span> https://github.com/yourname/yourname.github.io.git  yourpath</div></pre></td></tr></table></figure></p>
 <p>将github上的仓库克隆到本地。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">hexo generate</div><div class="line">cp -R public/* yourpath</div><div class="line"><span class="built_in">cd</span> yourpath</div><div class="line">git add .</div><div class="line">git commit -m <span class="string">"xxx"</span></div><div class="line">git push origin master</div></pre></td></tr></table></figure></p>
 <p>原理就是通过git上传，异曲同工。</p>
 
@@ -291,83 +293,84 @@
 
 
 
+    <div class="a2a_kit a2a_default_style">
+    <a class="a2a_dd" href="https://www.addtoany.com/share">Share</a>
+    <span class="a2a_divider"></span>
+    <a class="a2a_button_facebook"></a>
+    <a class="a2a_button_twitter"></a>
+    <a class="a2a_button_google_plus"></a>
+    <a class="a2a_button_pinterest"></a>
+    <a class="a2a_button_tumblr"></a>
 </div>
+<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+<style>
+    .a2a_menu {
+        border-radius: 4px;
+    }
+    .a2a_menu a {
+        margin: 2px 0;
+        font-size: 14px;
+        line-height: 16px;
+        border-radius: 4px;
+        color: inherit !important;
+        font-family: 'Microsoft Yahei';
+    }
+    #a2apage_dropdown {
+        margin: 10px 0;
+    }
+    .a2a_mini_services {
+        padding: 10px;
+    }
+    a.a2a_i,
+    i.a2a_i {
+        width: 122px;
+        line-height: 16px;
+    }
+    a.a2a_i .a2a_svg,
+    a.a2a_more .a2a_svg {
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        vertical-align: top;
+        background-size: 16px;
+    }
+    a.a2a_i {
+        border: none !important;
+    }
+    a.a2a_menu_show_more_less {
+        margin: 0;
+        padding: 10px 0;
+        line-height: 16px;
+    }
+    .a2a_mini_services:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+    .a2a_mini_services{*+height:1%;}
+</style>
 
-    <a data-url="http://yoursite.com/2016/09/20/Hexo搭建博客-1-初始搭建/" data-id="citc9s2hn00008ocyfmcvoztk" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
-<script>
-    (function ($) {
-        // Prevent duplicate binding
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
+</div>
 
             
     
-        <a href="http://yoursite.com/2016/09/20/Hexo搭建博客-1-初始搭建/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://yoursite.com/2016/09/20/Hexo搭建博客-1-初始搭建/">评论</a>
+        <a href="#comments" class="article-comment-link ds-thread-count" data-thread-key="http://yoursite.com/2016/09/20/Hexo搭建博客-1-初始搭建/">评论</a>
     
 
         </footer>
     </div>
     
         
+<nav id="article-nav">
+    
+        <a href="/2016/09/21/Hexo搭建博客-2-主题与第三方插件/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">上一篇</strong>
+            <div class="article-nav-title">
+                
+                    Hexo搭建博客 (2) 主题与第三方插件
+                
+            </div>
+        </a>
+    
+    
+</nav>
+
 
     
 </article>
@@ -378,12 +381,12 @@
     
         
 
-<div class="ds-share" data-thread-key="2016/09/20/Hexo搭建博客-1-初始搭建/" data-title="Hexo搭建博客 (1) 初始搭建" data-images="/css/images/head.JPG" data-content="" data-url="http://yoursite.com/2016/09/20/Hexo搭建博客-1-初始搭建/">
+<!-- <div class="ds-share" data-thread-key="2016/09/20/Hexo搭建博客-1-初始搭建/" data-title="Hexo搭建博客 (1) 初始搭建" data-images="/css/images/head.JPG" data-content="" data-url="http://yoursite.com/2016/09/20/Hexo搭建博客-1-初始搭建/">
     <div class="ds-share-inline">
-        <ul  class="ds-share-icons-16">
+        <ul  class="ds-share-icons-16"> -->
 
             <!-- <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li> -->
-            <li> <a class="ds-weibo" href="javascript:void(0);" data-service="weibo">新浪微博</a> </li> 
+  <!--           <li> <a class="ds-weibo" href="javascript:void(0);" data-service="weibo">新浪微博</a> </li> 
             <li> <a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a> </li> 
             <li> <a class="ds-qq" href="javascript:void(0);" data-service="qq">QQ</a> </li> 
             <li> <a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a> </li> 
@@ -395,7 +398,7 @@
         <div class="ds-share-icons-more">
         </div>
     </div>
-</div>
+</div> -->
 
 <div class="ds-thread" data-thread-key="2016/09/20/Hexo搭建博客-1-初始搭建/" data-title="Hexo搭建博客 (1) 初始搭建" data-url="http://yoursite.com/2016/09/20/Hexo搭建博客-1-初始搭建/">
 </div>
@@ -416,14 +419,14 @@
         color: white;
         border: none;
         box-shadow: none;
-        background: #d32;
+        background: #22AADD;
         text-shadow: none;
         font-weight: normal;
         font-family: 'Microsoft Yahei';
     }
     #ds-thread #ds-reset .ds-post-button:hover {
         color: white;
-        background: #DE594C;
+        background: #6FD1F6;
     }
     #ds-thread #ds-reset .ds-post-button:active {
         background: #d32;
@@ -453,6 +456,25 @@
                     <li>
                         
                         <div class="item-thumbnail">
+                            <a href="/2016/09/21/Hexo搭建博客-2-主题与第三方插件/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://odt8g6f7a.bkt.clouddn.com/thumbnail.png)" alt="Hexo搭建博客 (2) 主题与第三方插件" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Hexo/">Hexo</a></p>
+                            <p class="item-title"><a href="/2016/09/21/Hexo搭建博客-2-主题与第三方插件/" class="title">Hexo搭建博客 (2) 主题与第三方插件</a></p>
+                            <p class="item-date"><time datetime="2016-09-21T07:43:16.000Z" itemprop="datePublished">2016-09-21</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
                             <a href="/2016/09/20/Hexo搭建博客-1-初始搭建/" class="thumbnail">
     
     
@@ -478,7 +500,7 @@
     <div class="widget-wrap">
         <h3 class="widget-title">分类</h3>
         <div class="widget">
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">1</span></li></ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">2</span></li></ul>
         </div>
     </div>
 
@@ -487,7 +509,7 @@
     <div class="widget-wrap">
         <h3 class="widget-title">归档</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">九月 2016</a><span class="archive-list-count">1</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">九月 2016</a><span class="archive-list-count">2</span></li></ul>
         </div>
     </div>
 
@@ -496,7 +518,7 @@
     <div class="widget-wrap">
         <h3 class="widget-title">标签</h3>
         <div class="widget">
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a><span class="tag-list-count">1</span></li></ul>
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a><span class="tag-list-count">2</span></li></ul>
         </div>
     </div>
 
